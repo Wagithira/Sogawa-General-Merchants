@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sogawa General Merchants - Your Digital Partner</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a7d9f7; /* Light blue accent */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #7ec7f2; /* Slightly darker on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-blue-900 text-white shadow-lg py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-wide flex items-center">
+                <svg class="w-8 h-8 mr-2 text-teal-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-11a1 1 0 10-2 0v4a1 1 0 102 0V7zm3 1a1 1 0 10-2 0v3a1 1 0 102 0V8z" clip-rule="evenodd"></path>
+                </svg>
+                Sogawa General Merchants
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-teal-400 transition duration-300">Home</a>
+                <a href="#services" class="hover:text-teal-400 transition duration-300">Services</a>
+                <a href="#about" class="hover:text-teal-400 transition duration-300">About Us</a>
+                <a href="#contact" class="hover:text-teal-400 transition duration-300">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="md:hidden hidden bg-blue-800 text-white py-4 px-4">
+            <nav class="flex flex-col space-y-3">
+                <a href="#home" class="block hover:text-teal-400 transition duration-300 py-2">Home</a>
+                <a href="#services" class="block hover:text-teal-400 transition duration-300 py-2">Services</a>
+                <a href="#about" class="block hover:text-teal-400 transition duration-300 py-2">About Us</a>
+                <a href="#contact" class="block hover:text-teal-400 transition duration-300 py-2">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-20 md:py-32 text-center shadow-inner">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                Sogawa General Merchants: Your Trusted Partner for <span class="text-teal-300">Digital Solutions</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90">
+                Located in Nairobi CBD, we offer a comprehensive range of cyber services, from printing to professional document support, with reliability and precision.
+            </p>
+            <a href="#services" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                Explore Our Services
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12">Our Comprehensive Services</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Service Card 1: Printing & Photocopying -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4 text-blue-600">🖨️</span>
+                        <h3 class="text-2xl font-semibold text-blue-800">Printing & Photocopying</h3>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Black and white printing</li>
+                        <li>Color printing</li>
+                        <li>Photocopying (single or double-sided)</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2: Scanning Services -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4 text-blue-600">📄</span>
+                        <h3 class="text-2xl font-semibold text-blue-800">Scanning Services</h3>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Document scanning (certificates, IDs, letters)</li>
+                        <li>Photos or passport-size photo scanning</li>
+                        <li>Sending scanned documents via email or WhatsApp</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3: Typing & Document Formatting -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4 text-blue-600">✍️</span>
+                        <h3 class="text-2xl font-semibold text-blue-800">Typing & Document Formatting</h3>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>CVs and cover letters</li>
+                        <li>School assignments</li>
+                        <li>Business proposals, reports</li>
+                        <li>Official letters (application letters, recommendation letters)</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 4: Passport & ID Photo Services -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4 text-blue-600">📸</span>
+                        <h3 class="text-2xl font-semibold text-blue-800">Passport & ID Photo Services</h3>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Taking passport-size photos (digital & printed)</li>
+                        <li>Editing photos (background change, resizing)</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 5: Laminating & Binding -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4 text-blue-600">📚</span>
+                        <h3 class="text-2xl font-semibold text-blue-800">Laminating & Binding</h3>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Laminating important documents (IDs, certificates)</li>
+                        <li>Spiral binding of reports, assignments, projects</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 6: Sale of Stationery & Accessories -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4 text-blue-600">🖊️</span>
+                        <h3 class="text-2xl font-semibold text-blue-800">Stationery & Accessories</h3>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Envelopes, pens, notebooks</li>
+                        <li>Flash disks, memory cards</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 7: Business Support Services -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-4 text-blue-600">📈</span>
+                        <h3 class="text-2xl font-semibold text-blue-800">Business Support Services</h3>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Logo design and simple branding</li>
+                        <li>Bulk SMS services</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-blue-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">About Sogawa General Merchants</h2>
+            <p class="text-lg leading-relaxed max-w-4xl mx-auto opacity-90">
+                At Sogawa General Merchants, located conveniently in Nairobi CBD, Kenda House, just beside Afya Centre, we are dedicated to providing reliable, efficient, and high-quality cyber services to individuals and businesses. With a focus on professionalism and customer satisfaction, we aim to be your go-to partner for all your digital and document needs. Our experienced team is committed to delivering excellent results with every service.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12">Get in Touch</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-lg text-gray-700">
+                    <div class="flex items-center">
+                        <span class="text-blue-600 text-2xl mr-4">📍</span>
+                        <p><strong>Location:</strong> Nairobi CBD along Tom Mboya Street, Kenda House, just beside Afya Centre</p>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-blue-600 text-2xl mr-4">📞</span>
+                        <p><strong>Phone:</strong> <a href="tel:+254721295929" class="text-blue-700 hover:underline">0721295929</a></p>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-blue-600 text-2xl mr-4">📧</span>
+                        <p><strong>Email:</strong> <a href="mailto:info@sogawageneralmerchants.com" class="text-blue-700 hover:underline">info@sogawageneralmerchants.com</a></p>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-blue-600 text-2xl mr-4">⏰</span>
+                        <p><strong>Operating Hours:</strong> Mon - Sat: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Simple Contact Form (Placeholder) -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-blue-100">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-6">Send Us a Message</h3>
+                    <form class="space-y-4">
+
+                        <div>
+                            <label for="message" class="block text-gray-700 text-sm font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <!-- WhatsApp Button -->
+                      <a href="https://wa.me/254721295929?text=Hello%20Black%20Rosé%20Salon%2C%20I%20would%20like%20to%20book%20an%20appointment"
+ id="whatsapp-button" target="_blank" class="inline-flex items-center justify-center w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-5 h-5 mr-2">
+                            Contact us on WhatsApp
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-900 text-white py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-sm">&copy; 2025 Sogawa General Merchants. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-white hover:text-teal-400 transition duration-300">Facebook</a>
+                <a href="#" class="text-white hover:text-teal-400 transition duration-300">Twitter</a>
+                <a href="#" class="text-white hover:text-teal-400 transition duration-300">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu after clicking a link
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Toggle mobile menu visibility
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Function to handle WhatsApp button click and pre-fill message
+        document.getElementById('whatsapp-button').addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default link behavior
+
+            const messageInput = document.getElementById('message');
+            const messageText = messageInput.value;
+            const phoneNumber = '254721295929'; // Updated WhatsApp phone number
+
+            // Construct the WhatsApp URL with pre-filled text
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(messageText)}`;
+
+            // Open the WhatsApp link
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
